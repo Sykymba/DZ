@@ -1,1 +1,24 @@
+using System;
 
+
+class Program {
+    static void Main() {
+        Console.Write("specify the purchase amount: ");
+        int amount = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(amount);
+        switch (amount) {
+            case <= 5000 :
+                int discaunt = amount - (amount * 5) / 100;
+                Console.WriteLine("the total amount with a discount: "+ (amount - (amount * 5) / 100));
+                break;
+            case <= 15000 :
+                Console.WriteLine("the total amount with a discount: "+ (amount - (amount * 10) / 100));
+                break;
+            case < 25000 :
+                Console.WriteLine("the total amount with a discount: "+ (amount - (amount * 15) / 100));
+                break;
+            case >= 25000 :
+                Console.WriteLine("the total amount with a discount: "+ (amount - (amount * 20) / 100));
+                break;
+        }
+}}
