@@ -1,0 +1,47 @@
+using System;
+
+
+class Program {
+    static void Main() {
+        Console.Write("Enter the date of birth, the day of the month: ");
+        string x = Console.ReadLine();
+        string month = x.Substring(3, 2);
+        switch (month) {
+            case "01":
+                Console.WriteLine("May the new year bring you good luck and happiness!");
+                break;
+            case "02":
+                Console.WriteLine("Love, warmth, and harmony every day.!");
+                break;
+            case "03":
+                Console.WriteLine("Of blooming hopes and bright moments.!");
+                break;
+            case "04":
+                Console.WriteLine("May every day be sunny and joyful.");
+                break;
+            case "05":
+                Console.WriteLine("Health, well-being and new achievements");
+                break;
+            case "06":
+                Console.WriteLine("Happiness and joy in every moment.");
+                break;
+            case "07":
+                Console.WriteLine("Let your dreams come true and your life be happy.");
+                break;
+            case "08":
+                Console.WriteLine("Good luck with all your endeavors and inspiration.");
+                break;
+            case "09":
+                Console.WriteLine("Stability, success, and new ideas.");
+                break;
+            case "10":
+                Console.WriteLine("May every day be filled with warmth and light");
+                break;
+            case "11":
+                Console.WriteLine("Well-being, comfort, and peace of mind.");
+                break;
+            case "12":
+                Console.WriteLine("Magic, wonders, and a festive mood!");
+                break;
+            }    
+}}
