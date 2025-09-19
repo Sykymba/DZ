@@ -1,0 +1,46 @@
+using System;
+
+
+class Program {
+    static void Main() {
+        int lenght = 4;
+        Console.Write("Enter the date of birth, the day of the month: ");
+        string x = Console.ReadLine();
+        string month = x.Substring(3, 2);
+        if (month == "01"){
+            Console.WriteLine("May the new year bring you good luck and happiness!");
+        }
+        else if (month == "02"){
+            Console.WriteLine("Love, warmth, and harmony every day.!");
+        }
+        else if (month == "03"){
+            Console.WriteLine("Of blooming hopes and bright moments.!");
+        }
+        else if (month == "04"){
+            Console.WriteLine("May every day be sunny and joyful.");
+        }
+        else if (month == "05"){
+            Console.WriteLine("Health, well-being and new achievements");
+        }
+        else if (month == "06"){
+            Console.WriteLine("Happiness and joy in every moment.");
+        }
+        else if (month == "07"){
+            Console.WriteLine("Let your dreams come true and your life be happy.");
+        }
+        else if (month == "08"){
+            Console.WriteLine("Good luck with all your endeavors and inspiration.");
+        }
+        else if (month == "09"){
+            Console.WriteLine("Stability, success, and new ideas.");
+        }
+        else if (month == "10"){
+            Console.WriteLine("May every day be filled with warmth and light");
+        }
+        else if (month == "11"){
+            Console.WriteLine("Well-being, comfort, and peace of mind.");
+        }
+        else if (month == "12"){
+            Console.WriteLine("Magic, wonders, and a festive mood!");
+        }      
+}}
