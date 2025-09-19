@@ -3,7 +3,6 @@ using System;
 
 class Program {
     static void Main() {
-        int lenght = 4;
         Console.Write("Enter the date of birth, the day of the month: ");
         string x = Console.ReadLine();
         string month = x.Substring(3, 2);
