@@ -1,1 +1,61 @@
+using System;
 
+
+class Program
+{
+
+    
+    static int Number_Triangel(double[] aries, int count)
+    {
+        double max_num = 0;
+        int max_index = 0;
+
+        for (int i = 0; i < count; i++)
+        {
+            if (aries[i] > max_num)
+            {
+                max_num = aries[i];
+                max_index = i;
+            }
+        }
+        return max_index;
+    }
+
+    
+    static double Сalculation(double a, double b, double c)
+    {
+        if (a + b >= c || b + c >= a || a + c >= b)
+        {
+            double p = (a + b + c) / 2;
+            Console.WriteLine(Math.Sqrt(p * (p - a) * (p - b) * (p - c)));
+            return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+        return 0;
+    }
+
+    
+    static void Main()
+    {
+        int count = 3;
+        double[] aries = new double[3];
+
+        for (int i = 0; i < count; i++){
+            double[] triangel = new double[3];
+            Console.WriteLine($"Enter the sides of the triangle {i + 1}: ");
+            for (int j = 0; j < 3; j++)
+            {
+                Console.Write($"enter the side{j + 1}: ");
+                triangel[j] = Convert.ToDouble(Console.ReadLine());
+            }
+            
+            aries[i] = Сalculation(triangel[0], triangel[1], triangel[2]);
+            if (aries[i] == -1)
+            {
+                aries[i] = 0;
+            }
+            Console.WriteLine();
+        }
+            int max_index = Number_Triangel(aries, count);
+            Console.WriteLine($"the largest area of the number: {max_index + 1} triangle is");
+    }
+}
