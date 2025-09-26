@@ -1,1 +1,14 @@
+using System;
+// Определите, является ли исходная строка символов палиндромом (читается одинаково с начала и с конца). Регистры символов и пробелы игнорируйте.
 
+class Program {
+    static void Main() {
+          Console.Write("input word: ");
+          string user_string = Console.ReadLine()
+              .ToLower()
+              .Replace(" ", "");
+          string revers_string = "";
+          foreach (var i in user_string) {
+              revers_string = i + revers_string;
+          }
+          Console.WriteLine($"palindrom {user_string}?  {revers_string == user_string}");
